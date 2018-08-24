@@ -1,23 +1,21 @@
 
 <?php
-require 'vendor/autoload.php';
+require 'vendor/autoload.php'; // If you're using Composer (recommended)
 
 $email = new \SendGrid\Mail\Mail(); 
-$email->setFrom("me@nateogund.com.ng", "Example User");
+$email->setFrom("test@example.com", "Example User");
 $email->setSubject("Sending with SendGrid is Fun");
-$email->addTo("nathanoguntuberu@gmail.com", "Example User");
+$email->addTo("test@example.com", "Example User");
 $email->addContent("text/plain", "and easy to do anywhere, even with PHP");
 $email->addContent(
     "text/html", "<strong>and easy to do anywhere, even with PHP</strong>"
 );
-
-print_r($email);
 $sendgrid = new \SendGrid(getenv('SENDGRID_API_KEY'));
 try {
     $response = $sendgrid->send($email);
-    echo $response->statusCode() . "\n";
+    print $response->statusCode() . "\n";
     print_r($response->headers());
-    echo $response->body() . "\n";
+    print $response->body() . "\n";
 } catch (Exception $e) {
     echo 'Caught exception: '. $e->getMessage() ."\n";
 }
