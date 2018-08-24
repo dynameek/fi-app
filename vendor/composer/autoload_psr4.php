@@ -6,5 +6,22 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'Zend\\Validator\\' => array($vendorDir . '/zendframework/zend-validator/src'),
+    'Zend\\Uri\\' => array($vendorDir . '/zendframework/zend-uri/src'),
+    'Zend\\Stdlib\\' => array($vendorDir . '/zendframework/zend-stdlib/src'),
+    'Zend\\ServiceManager\\' => array($vendorDir . '/zendframework/zend-servicemanager/src'),
+    'Zend\\Mime\\' => array($vendorDir . '/zendframework/zend-mime/src'),
+    'Zend\\Mail\\' => array($vendorDir . '/zendframework/zend-mail/src'),
+    'Zend\\Loader\\' => array($vendorDir . '/zendframework/zend-loader/src'),
+    'Zend\\Http\\' => array($vendorDir . '/zendframework/zend-http/src'),
+    'Zend\\Escaper\\' => array($vendorDir . '/zendframework/zend-escaper/src'),
     'Twilio\\' => array($vendorDir . '/twilio/sdk/Twilio'),
+    'TrueBV\\' => array($vendorDir . '/true/punycode/src'),
+    'Symfony\\Polyfill\\Mbstring\\' => array($vendorDir . '/symfony/polyfill-mbstring'),
+    'SendGrid\\Stats\\' => array($vendorDir . '/sendgrid/sendgrid/lib/stats'),
+    'SendGrid\\Mail\\' => array($vendorDir . '/sendgrid/sendgrid/lib/mail'),
+    'SendGrid\\Contacts\\' => array($vendorDir . '/sendgrid/sendgrid/lib/contacts'),
+    'SendGrid\\' => array($vendorDir . '/sendgrid/php-http-client/lib', $vendorDir . '/sendgrid/sendgrid/lib'),
+    'Psr\\Container\\' => array($vendorDir . '/psr/container/src'),
+    'Interop\\Container\\' => array($vendorDir . '/container-interop/container-interop/src/Interop/Container'),
 );

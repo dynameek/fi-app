@@ -6,4 +6,7 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'Smtpapi' => array($vendorDir . '/sendgrid/smtpapi/lib'),
+    'SlmMail\\' => array($vendorDir . '/slm/mail/src'),
+    'SlmMailTest\\' => array($vendorDir . '/slm/mail/tests'),
 );
