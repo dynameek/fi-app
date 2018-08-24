@@ -1,0 +1,55 @@
+/*
+ *
+ *
+ */
+.site-icon
+{
+    align-self: center;
+    width: 120px;
+    margin-bottom: 20px;
+}
+
+.page-wrap{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    
+    background: #f5f5f5;
+}
+.page-wrap > div{
+    align-self: center;
+    width: 350px;
+    
+    display: flex;
+    flex-direction: column;
+}
+
+/*  */
+.form-wrapper{
+    background: #fff;
+    border: 1px solid #ddd;
+    
+    margin-bottom: 15px;
+}
+.form-wrapper > h3 {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    
+    margin-bottom: 10px;
+    text-align: left;
+    
+    color: #555;
+}
+.form-message{
+    padding: 5px;
+}
+.form-wrapper > form
+{
+    padding: 10px;
+}
+.page-wrap > div > div
+{
+    text-align: center;
+}

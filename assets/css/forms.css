@@ -1,0 +1,64 @@
+/*
+ *	@Purpose: Holds all my form styling
+ *	@Author: Oguntuberu Nathan O.
+ *	@Date: 15-07-2018
+*/
+form{
+	box-sizing: border-box;
+	float: left;
+	width: 100%;
+	height: auto;
+}
+button{
+	box-sizing: border-box;
+	padding: 7.5px 15px;
+}
+
+input, textarea, select{
+	box-sizing: border-box;
+	float: left;
+	width: 100%;
+	height: auto;
+	
+	padding: 7.5px;
+	border: 1px solid #ccc;
+	margin-bottom: 10px;
+}
+input[type='button']{
+	margin-top: 5px;
+	padding: 10px;
+	border: none;
+	
+	font-size: 0.95em;
+}
+label{
+	display: block;
+	width: 100%;
+	margin-bottom: 7.5px;
+}
+
+#form-message{
+	margin-bottom: 15px;
+	padding: 10px 5px;
+	text-align: center;
+	display: none;
+}
+
+/*	*/
+.form-group{
+	margin-bottom: 10px;
+}
+.form-actions{
+	margin-top: 10px;
+}
+.no-border{
+	border: none;
+}
+.curved-border{
+	border-radius: 3.5px;
+}
+
+/*	*/
+.short-btn{
+	width: 120px;
+}
