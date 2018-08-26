@@ -10,7 +10,8 @@ $email->addContent("text/plain", "and easy to do anywhere, even with PHP");
 $email->addContent(
     "text/html", "<strong>and easy to do anywhere, even with PHP</strong>"
 );
-$sendgrid = new \SendGrid('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');
+$sendgrid = new \SendGrid(getenv('SENDGRID_API_KEY'));
+
 try {
     $response = $sendgrid->send($email);
     print $response->body() . "\n";
